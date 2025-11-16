@@ -2,11 +2,11 @@ const zombie = document.getElementById('zombie');
 const scene = document.getElementById('underlay');
   
 let mouseX = window.innerWidth / 2;
-let mouseY = window.innerHeight / 2;
+let mouseY = window.innerHeight - 128;
 
 // logical centre position of the zombie (independent of transforms)
 let posX = window.innerWidth / 2;
-let posY = window.innerHeight / 2;
+let posY = window.innerHeight;
 
 // new: death state
 let isDead = false;
@@ -33,7 +33,7 @@ function animate() {
   const width  = zombie.offsetWidth;
   const height = zombie.offsetHeight;
 
-  const lerp = 0.009;
+  const lerp = 0.005;
 
   // compute distance from zombie centre to mouse
   const dx = mouseX - posX;
