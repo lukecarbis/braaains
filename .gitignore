@@ -1,0 +1,12 @@
+# Hugo build output
+/public/
+/resources/_gen/
+/hugo_stats.json
+.hugo_build.lock
+
+# Temporary files and folders
+.DS_Store
+
+# Editors
+.nova
+.codeedit
