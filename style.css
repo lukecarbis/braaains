@@ -103,6 +103,9 @@ body {
   backdrop-filter: blur(4px);
   padding: 1.5rem 2rem;
   border-radius: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-wrap: pretty;
 }
 
 .content p {
